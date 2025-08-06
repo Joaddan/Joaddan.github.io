@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grâce Joaddan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://cdn.pixabay.com/photo/2017/02/10/11/47/clouds-2057581_1280.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      text-align: center;
+      border-bottom: 2px solid #f4a7b9;
+    }
+
+    h1 {
+      color: #f4a7b9;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 20px;
+      border-radius: 12px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #f4a7b9;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e68aa1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grâce Joaddan</h1>
+    <p>Bienvenue dans un espace de lumière où l’on parle de femmes fortes et de santé mentale féminine ✨</p>
+  </header>
+
+  <section>
+    <h2>🌟 Femmes qui ont marqué l’histoire</h2>
+    <div class="card">
+      <h3>Simone Veil</h3>
+      <p>Icône des droits des femmes en France. Elle a porté la loi légalisant l’avortement en 1975.</p>
+    </div>
+    <div class="card">
+      <h3>Frida Kahlo</h3>
+      <p>Artiste mexicaine, symbole de résilience et de force féminine à travers l’art.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🧠 Sensibilisation à la santé mentale</h2>
+    <p>Les femmes portent souvent des douleurs invisibles. Parlons-en. Comprenons. Soutenons.</p>
+  </section>
+
+  <section>
+    <h2>💌 Inscription pour recevoir des témoignages et encouragements</h2>
+    <form onsubmit="event.preventDefault(); alert('Merci pour ton inscription ! 💖'); this.reset();">
+      <input type="text" placeholder="Votre prénom" required />
+      <input type="email" placeholder="Votre adresse email" required />
+      <textarea rows="4" placeholder="Laissez un mot doux ou un témoignage"></textarea>
+      <button type="submit">S’inscrire</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Grâce Joaddan – Féminisme, solidarité, courage 💐
+  </footer>
+</body>
+</html>
