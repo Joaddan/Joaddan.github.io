@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grâce Joaddan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #b3d9ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #99ccff;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .joaddan-img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 130px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: #f4a7b9;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .intro,
+    .slogan {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    form {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input,
+    textarea,
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #f4a7b9;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e68aa1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #99ccff;
+      font-size: 14px;
+    }
+
+    .cute-img {
+      width: 60px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img
+      src="https://cdn.pixabay.com/photo/2021/06/24/03/53/girl-6359142_1280.png"
+      alt="Illustration Joaddan"
+      class="joaddan-img"
+    />
+    <h1>Grâce Joaddan</h1>
+    <p class="intro">
+      Bienvenue dans le monde de Grâce Joaddan 🌸<br />
+      Ici, on parle des femmes puissantes, de santé mentale et d'encouragements
+      sincères.
+    </p>
+    <p class="slogan">✨ Une voix, une histoire, une force féminine ✨</p>
+  </header>
+
+  <main>
+    <section class="histoire">
+      <h2>💪 Femmes inspirantes</h2>
+      <div class="card">
+        <h3>Rosa Parks</h3>
+        <p>Figure emblématique de la lutte contre la ségrégation raciale.</p>
+      </div>
+      <div class="card">
+        <h3>Malala Yousafzai</h3>
+        <p>Militante pakistanaise pour le droit à l'éducation des filles.</p>
+      </div>
+    </section>
+
+    <section class="sante">
+      <h2>🧠 Santé mentale & femmes</h2>
+      <p>
+        Il est essentiel de reconnaître les luttes mentales que vivent les
+        femmes : pression sociale, charge mentale, injonctions... Ce site
+        sensibilise aussi les hommes à ces réalités.
+      </p>
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2016/03/31/19/14/brain-1294851_960_720.png"
+          class="cute-img"
+          alt="cerveau"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2022/08/03/09/59/mental-health-7362301_960_720.png"
+          class="cute-img"
+          alt="femme mentale"
+        />
+      </div>
+    </section>
+
+    <section class="formulaire">
+      <h2>💌 Reçois de la force & des témoignages !</h2>
+      <form id="inscriptionForm">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" required />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Un mot doux ou une histoire à partager :</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button type="submit">S’inscrire</button>
+      </form>
+    </section>
+
+    <section class="temoignages">
+      <h2>📣 Témoignages de femmes</h2>
+      <div class="card">
+        <p>
+          "Parler de ma santé mentale m’a sauvée. Merci Grâce Joaddan pour cet
+          espace." – Anonyme
+        </p>
+      </div>
+      <div class="card">
+        <p>"Lire les histoires des autres femmes m’a donné du courage." – Awa</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Grâce Joaddan – Féminisme, amour et courage 💖
+  </footer>
+
+  <script>
+    document
+      .getElementById("inscriptionForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert(
+          "Merci pour ton inscription 💌 Tu recevras bientôt des témoignages et de la force !"
+        );
+        this.reset();
+      });
+  </script>
+</body>
+</html>
